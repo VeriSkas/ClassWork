@@ -135,7 +135,6 @@ export const signUpHandler = () => {
 
 
     const checkFormValid = () => {
-        console.log(formFields);
         const isFormValid = Object.values(formFields).every(value => value.isValid );
         isFormValid ? signUpBtn.removeAttribute('disabled') : signUpBtn.setAttribute('disabled', true);
     };

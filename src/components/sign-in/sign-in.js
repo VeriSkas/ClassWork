@@ -28,7 +28,6 @@ export const signInHandler = () => {
         event.preventDefault();
         const email = emailInput.value;
         const password = passwordInput.value;
-        console.log(email, password );
         signIn(email, password).catch(error => showNotification(error, false))
     });
 
