@@ -1,0 +1,27 @@
+.input-error {
+    color: red;
+    display: none;
+}
+
+.invalid {
+    border: 1px solid red;
+}
+
+.error_notification, .success_notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(245, 120, 120);
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+
+}
+
+.success_notification {
+    background: rgb(130, 245, 120);
+}

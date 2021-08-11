@@ -1,0 +1,85 @@
+@import '../../styles/colors.scss';
+@import '../../styles/variables.scss';
+
+.signUn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_form {
+        width: 80%;
+        margin-top: 50px;
+
+        &_password-strength {
+            display: none;
+            width: 300px;
+            height: 200px;
+            border: 1px solid $blue;
+            padding: 10px;
+            border-radius: $border-radius;
+            margin-bottom: 30px;
+            background: rgb(237, 237, 234);
+            color: $blue;
+
+            &-status {
+                height: 10px;
+                border: 1px solid black;
+                border-radius: $border-radius;
+
+                &-current {
+                    &-weak {
+                        color: $error;
+
+                    }
+                    &-moderate {
+                        color: $warning;
+                    }
+                    &-strong {
+                        color: $strong;
+                    }
+                    &-complite {
+                        color: $blue;
+                    }
+                }
+
+                &-info {
+                    margin: 5px;
+                    
+                    p {
+                        color: rgb(178, 178, 211);
+                        margin: 0;
+                        font-size: 12px;
+                    }
+                }
+
+                &-filer {
+                    width: 50%;
+                    background-color: rgb(243, 26, 26);
+                    height: 8px;
+                    border-radius: $border-radius;
+
+                    &.weak {
+                        width: 25%;
+                        background-color: $error;
+                    }
+
+                    &.moderate {
+                        width: 50%;
+                        background-color: $warning;
+                    }
+
+                    &.strong {
+                        width: 75%;
+                        background-color: $strong;
+                    }
+                    
+                    &.veryStrong {
+                        width: 100%;
+                        background-color: $blue;
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.signIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_form {
+        width: 80%;
+        min-height: 300px;
+        margin-top: 50px;
+        .mb-3.signIn_form_input {
+            margin-bottom: 30px !important;
+            input {
+                position: relative;
+            }
+            .input-error {
+                position: absolute;
+            }
+        }
+        #signInBtn {
+            margin-top: 15px;
+        }
+    }
+
+    a {
+        margin: 25px;
+    }
+}
+
+.modal-info {
+    margin-left: 17px;
+}

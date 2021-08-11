@@ -1,0 +1,50 @@
+@import './colors.scss';
+@import './classes.scss';
+
+.mainContent {
+    padding: 30px;
+    background-color: rgb(231, 228, 228);
+
+    &__postForm {
+        width: 50%;
+        margin: 0 auto;
+        @extend %borderedBlock;
+        padding: 15px;
+        background-color: $no_bgc;
+    }
+
+    &__posts {
+        @extend %borderedBlock;
+        margin: 20px auto;
+        min-height: 20px;
+        display: flex;
+        flex-direction: column;
+
+        &-post {
+            background-color: $no_bgc;
+            @extend %borderedBlock;
+            width: 70%;
+            min-height: 20px;
+            margin: 20px;
+            padding: 15px;
+
+            &.other-user {
+                align-self: flex-end;
+            }
+
+            &-title {
+                text-decoration: underline;
+            }
+
+            &-content {
+                border: 1px solid;
+                padding: 10px;
+                overflow: auto;
+            }
+
+            &-bottomInfo {
+                font-size: 12px;
+            }
+        }
+    }
+}
