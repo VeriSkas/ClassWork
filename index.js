@@ -22,9 +22,6 @@ const user = {
 
 const arr = [1, 2, 3]
 
-console.log(user);
-console.log(arr);
-
 Object.prototype.sayHello = function() {  // прописанные функции для обжект, применятся и к др(аррэй наример)
     console.log(this.name)
 };
