@@ -35,4 +35,3 @@ const user2 = {
 
 user2.sayHello();
 console.log(user2.__proto__);
-console.log('Test');
